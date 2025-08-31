@@ -66,7 +66,9 @@
       box-shadow: 0 3px 8px rgba(0,0,0,0.08);
       transition: transform 0.2s ease;
     }
-    
+    .topic-card:hover {
+      transform: translateY(-5px);
+    }
     .topic-icon {
       font-size: 2rem;
       background: linear-gradient(135deg, #ff758c, #ff7eb3);
@@ -214,12 +216,12 @@
   <script>
     // Subject Data Array
     const subjects = [
-      { title: "Matsha", img: "Assets/Matsha.png", url: "electronics.html" },
+      { title: "matsha", img: "Assets/Matsha.png", url: "electronics.html" },
       { title: "Kurma", img: "Assets/Kurma.png", url: "languages.html" },
       { title: "Baraha", img: "Assets/Baraha.png", url: "physics.html" },
-      { title: "Narasimha, img: "Assets/Narasimha.png", url: "geography.html" },
-      { title: "Baman", img: "https://picsum.photos/seed/maths/200", url: "maths.html" },
-      { title: "parashuram", img: "https://picsum.photos/seed/chemistry/200", url: "chemistry.html" },
+      { title: "Naramisha", img: "Assets/Naramisha", url: "geography.html" },
+      { title: "Vrindabon", img: "https://picsum.photos/seed/maths/200", url: "maths.html" },
+      { title: "Hampi", img: "https://picsum.photos/seed/chemistry/200", url: "chemistry.html" },
     ];
 
     const container = document.getElementById("subjectContainer");
