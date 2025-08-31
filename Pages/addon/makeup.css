@@ -49,7 +49,7 @@
       padding: 20px 10px;
       border-radius: 12px;
       margin-top: 20px;
-      height: 320px; /* Fixed height */
+      height: calc(100% - 310px); /* Fixed height */
       position: relative;
     }
     .article-part {
