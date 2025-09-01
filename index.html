@@ -40,12 +40,29 @@
       --shadow: 0 10px 25px rgba(15, 41, 61, .08);
       --radius: 16px;
     }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      user-select: none;
+    }
+    /* Chrome, Safari, Opera ke liye */
+   *::-webkit-scrollbar {
+      display: none;
+   }
+
+  /* Firefox, Edge ke liye */
+  * {
+     -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;     /* Firefox */
+  }
     body {
       background: #FFFDE7 ;
       font-family: 'Poppins', sans-serif;
       max-width: 660px;
       margin: auto;
     }
+    /******************************************************/
     .header {
       background: /* #FFD700; */ #D6A99D ;
       border-bottom-left-radius: 30px;
