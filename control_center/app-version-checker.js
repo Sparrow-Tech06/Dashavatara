@@ -1,8 +1,8 @@
 const webVersion = "5.2"; // Website-required version
 
 function checkVersion() {
-    const appVersion = Android.getAppVersion(); // Android to WebView version fetch
-
+   // const appVersion = Android.getAppVersion(); // Android to WebView version fetch
+      const appVersion = "5.0"; // 🔹 Demo/Test purpose manual app version comment it for real 
     if (appVersion !== webVersion) {
         showUpdatePopup();
     }
