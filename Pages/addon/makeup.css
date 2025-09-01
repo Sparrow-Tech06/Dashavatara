@@ -110,6 +110,11 @@
        background-color: var(--overlay) ;
     }
 
+  .navber {
+       background: #d6a99d ;
+       position: sticky ;
+       top: 0px;
+  }
 
 
 
