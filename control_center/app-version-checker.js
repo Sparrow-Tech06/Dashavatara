@@ -1,34 +1,34 @@
+const webVersion = "5.2"; // Website-required version
 
-    const webVersion = "5.2"; // Website-required version
+function checkVersion() {
+    const appVersion = Android.getAppVersion(); // Android to WebView version fetch
 
-    function checkVersion() {
-        const appVersion = Android.getAppVersion(); // Android to WebView version fetch
+    if (appVersion !== webVersion) {
+        showUpdatePopup();
+    }
+}
 
-        if (appVersion !== webVersion) {
-            showUpdatePopup();
+function showUpdatePopup() {
+    Swal.fire({
+        title: "New Version Available",
+        text: "Your app version is outdated. Please update to continue.",
+        icon: "warning",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        showConfirmButton: false,
+        showCancelButton: false,
+        backdrop: true,
+        didOpen: () => {
+            const popup = Swal.getPopup();
+            popup.classList.add("no-close");
         }
-    }
+    });
+}
 
-    function showUpdatePopup() {
-        Swal.fire({
-            title: "New Version Available",
-            text: "Your app version is outdated. Please update to continue.",
-            icon: "warning",
-            allowOutsideClick: false,
-            allowEscapeKey: false,
-            showConfirmButton: false,
-            showCancelButton: false,
-            backdrop: true,
-            didOpen: () => {
-                // Optional: Disable closing via clicking background
-                const popup = Swal.getPopup();
-                popup.classList.add("no-close");
-            }
-        });
-    }
+// Run on load
+window.onload = () => {
+    checkVersion();
 
-    // Run on load
-    window.onload = checkVersion;
-
-
-
+    // Every 1 seconds check again
+    setInterval(checkVersion, 1000);
+};
