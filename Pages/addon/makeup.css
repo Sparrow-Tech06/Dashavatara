@@ -116,5 +116,10 @@
        top: 0px;
   }
 
+ .container-fluid  {
+       background: #d6a99d ;
+       position: sticky ;
+       top: 0px;
+  }
 
 
