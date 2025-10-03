@@ -55,12 +55,12 @@
   });
 
   // Image loader
-  /* const img = document.getElementById("articleImg");
+ const img = document.getElementById("articleImg");
     const skeleton = document.getElementById("imgSkeleton");
     img.onload = function() {
     skeleton.style.display = "none";
     img.style.display = "block";
-  };  */
+  };  
 
   // Initialize
   showPart(currentPart);
