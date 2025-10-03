@@ -22,7 +22,7 @@
       background-color: var(--primary-color) ;
     }
     /* Skeleton Loader */
-   /* .skeleton {
+  .skeleton {
       width: 100%;
       max-height: 160px;
       height: 160px;
@@ -34,7 +34,7 @@
     @keyframes shimmer {
       0% { background-position: -200% 0; }
       100% { background-position: 200% 0; }
-    }  */
+    }  
     .article-img {
       width: 100%;
       max-height: 160px;
