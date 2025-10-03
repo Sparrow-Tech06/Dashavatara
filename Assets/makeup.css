@@ -41,7 +41,7 @@
       height: 160px;
       object-fit: cover;
       border-radius: 10px;
-   /*   display: none;  hidden until loaded */
+      display: none; /* hidden until loaded */
     }
     .article-box {
       background: var(--box-color) ;
